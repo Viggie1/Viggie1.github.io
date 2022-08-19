@@ -1,3 +1,4 @@
+/*Animations*/
 .wave {
   animation-name: wave-animation;  
   animation-duration: 2.5s;        
@@ -17,8 +18,17 @@
   100% { transform: rotate( 0.0deg) }
 }
 
+/*Custom Classes*/
 .textSecondary {
   color: #2DD4BF;
+}
+
+.textSecondaryMoving {
+  color: #2DD4BF;
+}
+
+.textSecondaryMoving > .txt {
+  border-right: 0.2rem solid white;
 }
 
 .backgroundSecondary {
@@ -26,14 +36,284 @@
   color: 134E4A;
 }
 
+.nav-item:active {
+  color: white;
+}
+
 .styledButton {
   background-color: #2DD4BF;
   justify-content: center;
   border-radius: 0.5rem;
   border: solid;
+  box-shadow: 5rem;
+  font-size: 30px;
+  padding: 10px;
+  transition: transform 0.2s ease-in;
+}
+
+.styledButton:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .styledLink {
   text-decoration: none;
   color: black;
 }
+
+.styledLink:hover {
+  color: black;
+}
+
+.heroImage {
+  max-width: 700px;
+}
+
+.card {
+  transition: transform 0.2s ease-in;
+  margin: 18px 10px 40px;
+  box-shadow: #2DD4BF;
+}
+
+.card .flex {
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.projectImages {
+  transition: transform 0.25s ease-in;
+  width: 450px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 0.9rem;
+  filter: grayscale(90%);
+  filter: blur(100%);
+}
+
+.imageTitle {
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.projectTitles {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 50%;
+  top: 50%;
+}
+
+.projectTitle {
+  text-decoration: none;
+  color: #212121;
+  align-self: center;
+  top: -40%;
+}
+
+
+.projectImages:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  filter: grayscale(0%);
+  filter: blur(0%);
+}
+
+.imgRounded{
+  border-radius: 0.5rem;
+}
+
+.img-responsive {
+  transition: transform 0.25s ease-in;
+  filter: grayscale(90%);
+  filter: blur(100%);
+}
+
+.img-responsive:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+  filter: grayscale(0%);
+  filter: blur(0%);
+}
+
+.modal-header,
+.modal-body,
+.modal-dialog,
+.modal-footer {
+  background-color:#212121;
+  color: white;
+  border-color: #212121;
+}
+
+.modal-dialog {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
+.slide-container {
+  max-width: 1400px;
+  width: 100%;
+  background-color: #00bfa5;
+  padding: 40px 0px;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.skillCard {
+  width: 100px;
+  height: 300px;
+  border-radius: 35px;
+  background-color: #212121;
+}
+
+.imageContent,
+.skillCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  color: white;
+}
+
+.imageContent {
+  row-gap: 5px;
+}
+
+.skillCardImage {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #212121;
+  padding: 3px;
+}
+
+.skillCardImage .skillCardImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.swiperNavBtn {
+  color:#212121;
+  transition: color 0.3s ease-in;
+}
+
+.swiperNavBtn:hover {
+  color:  #d3d3d3;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.footerLinks {
+  color: white;
+  font-size: 30px;
+}
+
+.fa-github,
+.fa-inbox,
+.fa-linkedin {
+  color: white;
+  transition: scale 1s ease-in;
+}
+
+.fa-github:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.fa-inbox:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.fa-linkedin:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+a .fa {
+  color: white;
+}
+
+.aboutMeTitle {
+  padding-top: 40px;
+}
+
+.aboutMeContent {
+  padding-top: 20px;
+  float: left;
+  width: 55%;
+
+}
+
+.aboutMeImage {
+  float: right;
+  width: 40%;
+}
+
+.aboutMeImage img {
+  padding-top: 0%;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: #212121 5px solid;
+  box-shadow: #212121;
+  filter: grayscale(50%);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiperNavBtn {
+    display: none;
+  }
+
+  .aboutMeTitle {
+    text-align: center;
+  }
+
+  .aboutMeContent {
+    text-align: center;
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .aboutMeImage {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-top: 5px;
+  }
+
+  .projectTitle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .heroImage {
+    max-width: 300px;
+  }
+}
+
