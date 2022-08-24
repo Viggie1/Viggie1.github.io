@@ -123,6 +123,20 @@
   filter: blur(0%);
 }
 
+
+.textWrapper {
+  width: 100%;
+  position: relative;
+  top: -60%;
+}
+
+.textWrapper h1 {
+  text-align: center;
+  color: #d3d3d3;
+  font-weight: bolder;
+  text-decoration: solid;
+}
+
 .imgRounded{
   border-radius: 0.5rem;
 }
@@ -253,17 +267,17 @@ a .fa {
 
 .aboutMeTitle {
   padding-top: 40px;
+
 }
 
 .aboutMeContent {
   padding-top: 20px;
   float: left;
   width: 55%;
-
 }
 
+
 .aboutMeImage {
-  float: right;
   width: 40%;
 }
 
@@ -276,6 +290,25 @@ a .fa {
   box-shadow: #212121;
   filter: grayscale(50%);
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  width: 100%;
+}
+
+.column img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.column h4 {
+  width: 100%;
+}
+
 
 @media screen and (max-width: 768px) {
   .slide-content {
